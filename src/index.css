@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Tajawal:wght@300;400;500;700;900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-accent-dark: var(--accent-dark);
+  --color-custom-bg: var(--custom-bg);
+  --color-card-bg: var(--card-bg);
+  --color-text-dark: var(--text-dark);
+  --color-text-grey: var(--text-grey);
+  --color-text-muted: var(--text-muted);
+  
+  --font-sans: 'Cairo', 'Tajawal', 'Inter', sans-serif;
+}
+
+:root {
+  --primary: #FFCC00;
+  --primary-light: #FFE082;
+  --primary-dark: #F57F17;
+  --accent: #FFB300;
+  --accent-light: #FFECB3;
+  --accent-dark: #E65100;
+  --custom-bg: #121212;
+  --card-bg: #1E1E1E;
+  --text-dark: #FFFFFF;
+  --text-grey: #A0A0A0;
+  --text-muted: #666666;
+}
+
+:root.light {
+  --primary: #C5A029; /* Deep premium gold (harmonious with dark mode gold, not orange!) */
+  --primary-light: #DFB73C;
+  --primary-dark: #9E7D17;
+  --accent: #C5A029;
+  --accent-light: #F4E8C1;
+  --accent-dark: #8C6F10;
+  --custom-bg: #FAF9F6; /* Premium ivory white background */
+  --card-bg: #FFFFFF; /* Pure white card background */
+  --text-dark: #121212; /* Dark charcoal text */
+  --text-grey: #55555A; /* Legible dark slate gray text */
+  --text-muted: #88888E;
+}
+
+body {
+  background-color: var(--custom-bg);
+  color: var(--text-dark);
+  font-family: var(--font-sans);
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
