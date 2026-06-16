@@ -8,7 +8,9 @@ import {
   Database, 
   ArrowLeft, 
   ChevronLeft,
-  Sparkles
+  Sparkles,
+  Award,
+  UserCheck
 } from 'lucide-react';
 
 const teamMembers = [
@@ -176,6 +178,46 @@ export default function Team() {
                     </span>
                   ))}
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Supervisors Section */}
+        <div className="mt-24 border-t border-black/5 dark:border-white/5 pt-16">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h3 className="text-2xl font-black text-text-dark mb-3">الإشراف الأكاديمي والتقدير</h3>
+            <p className="text-sm text-text-grey font-semibold">
+              شكر وتقدير لأصحاب التوجيه والعمل الدؤوب الذين رافقوا مسيرة تطوير هذا المشروع بالدعم العلمي والأكاديمي.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Supervisor 1 */}
+            <div className="bg-card-bg/60 border border-black/5 dark:border-white/5 rounded-[2rem] p-8 shadow-xl flex gap-6 items-start hover:border-primary/20 transition-all duration-300">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center flex-shrink-0 text-primary border border-primary/20">
+                <Award className="w-7 h-7" />
+              </div>
+              <div>
+                <h4 className="text-lg font-black text-text-dark mb-1">المهندس وسيم الماضي</h4>
+                <p className="text-xs text-primary font-bold mb-3">رئيس قسم الكمبيوتر ونظم المعلومات في معهد دمشق التقاني المتوسط</p>
+                <p className="text-xs text-text-grey font-semibold leading-relaxed">
+                  المتابع العام لجميع المشاريع البرمجية بالمعهد، وصاحب الدور الريادي في تنظيم العملية التعليمية وتقديم الدعم المستمر لتذليل العقبات التقنية والأكاديمية أمام الطلاب.
+                </p>
+              </div>
+            </div>
+
+            {/* Supervisor 2 */}
+            <div className="bg-card-bg/60 border border-black/5 dark:border-white/5 rounded-[2rem] p-8 shadow-xl flex gap-6 items-start hover:border-primary/20 transition-all duration-300">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center flex-shrink-0 text-primary border border-primary/20">
+                <UserCheck className="w-7 h-7" />
+              </div>
+              <div>
+                <h4 className="text-lg font-black text-text-dark mb-1">المهندس خالد اسماعيل</h4>
+                <p className="text-xs text-primary font-bold mb-3">مشرف المشروع والمرشد الأكاديمي</p>
+                <p className="text-xs text-text-grey font-semibold leading-relaxed">
+                  المشرف والموجه المباشر لمشروع التخرج، الذي رافق الفريق خطوة بخطوة بالدعم العلمي والتقني، ووجّه مسار التطوير لضمان مطابقة النظام لأعلى المعايير الأكاديمية والعملية.
+                </p>
               </div>
             </div>
           </div>
