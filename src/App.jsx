@@ -6,6 +6,7 @@ import Audience from './components/Audience';
 import Features from './components/Features';
 import Demo from './components/Demo';
 import Team from './components/Team';
+import Dedication from './components/Dedication';
 import Footer from './components/Footer';
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
 
       {/* Team of Developers */}
       <Team />
+
+      {/* Dedication Section */}
+      <Dedication />
 
       {/* Footer & Contacts */}
       <Footer />
